@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Page with Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to My Interactive Page</h1>
+
+  <section id="counterSection">
+    <h2>Button Counter</h2>
+    <button id="counterBtn">Clicked 0 times</button>
+  </section>
+
+  <section id="colorSection">
+    <h2>Change Background Color</h2>
+    <button id="colorBtn">Change Background</button>
+  </section>
+
+  <section id="formSection">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <div>
+        <label>Username:</label>
+        <input type="text" id="username">
+        <span class="error-message" id="userError"></span>
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" id="email">
+        <span class="error-message" id="emailError"></span>
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" id="password">
+        <span class="error-message" id="passError"></span>
+      </div>
+      <button type="submit">Submit</button>
+      <div id="formSuccess" class="success-message"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
